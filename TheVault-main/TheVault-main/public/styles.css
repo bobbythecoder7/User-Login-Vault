@@ -1,0 +1,233 @@
+/* Customizing Bootstrap Elements CSS */
+
+.addFont{
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.addTextFont{
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.addBlueColor{
+    background-color: #B7C4CF !important;
+}
+
+.addLightColor{
+    background-color: #EEE3CB !important;
+}
+
+.addDarkColor{
+    background-color: #967E76 !important;
+}
+
+.addSemiDarkColor{
+    background-color: #D7C0AE !important;
+}
+
+.addBorder{
+    border: none !important; 
+}
+
+#signUpButton, #bigSignUp, .launchHeader{
+    color: white; 
+}
+
+#loginButton, #bigLogin{
+    color: black;
+}
+
+#signinButton{
+    color: white;
+}
+
+.homeButton{
+    color: black !important;
+}
+
+#headerText{
+    font-size: 20px;
+}
+
+#registerText, #loginText{
+    font-size: 25px
+}
+
+
+#registerText, #loginText{
+    display: inline-block;
+}
+
+/* Classes for JS on hover functionality */
+
+.blackBG{
+    background-color: black !important; 
+}
+
+.whiteBG{
+    background-color: white !important;
+}
+
+/* Hover transitions */
+
+.paddingLayers {
+    transition: transform 1s;
+  }
+.paddingLayers:hover {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(2);
+}
+
+.mainBlock {
+    transition: transform 1s;
+  }
+.mainBlock:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
+}
+
+.addTransform{
+    transform: scale(1.1);
+}
+
+#finalParagraph{
+    font-size: 30px; 
+    color: #F4EEE0;
+}
+
+/* Color change on hover of each padding layer */
+
+@keyframes change-color {
+    from {
+      background-color: #D7C0AE;
+    }
+
+    25%{
+        background-color: #B7C4CF;
+    }
+
+    50% {
+        background-color: #967E76;
+    }
+
+    75%{
+        background-color: #CDC2AE;
+    }
+
+    to {
+      background-color: #D7C0AE;
+    }
+  }
+
+.changingColor{
+    background-color: #D7C0AE;
+}
+
+.changingColor:hover{
+    animation-name: change-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* All button on-click and hover animations */
+
+button{
+    transition: transform 1s;
+    transition: box-shadow 0.1s;
+}
+button:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px #D7C0AE;
+}
+
+#signUpButton:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px #B7C4CF;
+}
+
+#signinButton:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px #B7C4CF;
+}
+
+button:active{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.07);
+}
+
+#endLog:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
+    box-shadow: 5px 5px 7px #4F4557;
+}
+
+#wrapper, #wrapper1
+{
+    display: block;
+    text-align: center;
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+.changingColorDark:hover{
+    animation-name: change-color-dark;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+.addDullColor{
+    background-color: #F4EEE0 !important;
+}
+
+#endLog{
+    color: #4F4557;
+}
+
+#secretsCopyright, .launchText{
+    color: whitesmoke !important;
+}
+
+.bigWrapper{
+    height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.smallWrapper{
+    height: 40vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+#space{
+    height: 50vh;
+}
+
+#scrollIcon {
+    -webkit-animation: hoverUpandDown 1s infinite linear;
+    animation: hoverUpandDown 1s infinite linear;
+}
+@-webkit-keyframes hoverUpandDown {
+     0% { }
+     50% { transform: translateY(-8px); }
+     100% { }
+}
+@keyframes hoverUpandDown {
+     0% { }
+     50% { transform: translateY(-8px); }
+     100% { }
+}
